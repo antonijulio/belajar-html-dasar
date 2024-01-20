@@ -176,3 +176,39 @@
 
 - sama seperti video, audio tinggal menggunakan tag `<audio></audio>`
 - panduan lengkap tentang audio HTML: [www.w3schools.com/html/html5_audio](https://www.w3schools.com/html/html5_audio.asp)
+
+### iframe
+
+- iframe atau inline frame
+- digunakan untuk menampilkan konten dari website lain
+- cara menggunakanya dengan menambahkan tag `<iframe></iframe>`
+
+### tabel
+
+- menampilkan tabel pada HTML dengan mengguanakan tag `<table></table>`
+- `<tr>` (table row) untuk membuat row / baris
+- `<th>` (table header) untuk memuat column / kolom pada header
+- `<td>` (table data) untuk memuat column / kolom pada body / isi tabel
+- `<thead>` section header pada tabel
+- `<tbody>` section body pada tabel
+- `<tfoot>` section footer pada tabel
+- urutanya `<table>` -> `<theader/tbody/tfoot>` -> `<tr>` -> `<th/td>`
+
+### collgroup
+
+- digunakan untuk menyeleksi kolom yang ingin kita styling
+- contoh:
+
+```
+<colgroup>
+    <col span="2" style="background-color: yellow" />
+    <col style="background-color: red" />
+</colgroup>
+```
+
+- artinya kolom 1 dan 2 berwarna kuning sedangkan kolom lainya berwarna merah
+
+### collspan dan rowspan
+
+- collspan menggabungkan kolom menjadi satu kolom
+- rowspan menggabungkan baris menjadi satu baris
