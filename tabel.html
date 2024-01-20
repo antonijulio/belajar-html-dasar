@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabel</title>
+  </head>
+  <body>
+    <h2>belajar tabel</h2>
+
+    <table style="border: 1px solid black">
+      <thead>
+        <tr>
+          <th>no</th>
+          <th>nama</th>
+          <th>usia</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>anton</td>
+          <td>21 tahun</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td>budi</td>
+          <td>21 tahun</td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td>jono</td>
+          <td>21 tahun</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td></td>
+          <td>jumlah</td>
+          <td>.... tahun</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <h2>col group</h2>
+    <table style="border: 1px solid black">
+      <colgroup>
+        <col span="2" style="background-color: yellow" />
+        <col style="background-color: red" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th>no</th>
+          <th>nama</th>
+          <th>usia</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>anton</td>
+          <td>21 tahun</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td>budi</td>
+          <td>21 tahun</td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td>jono</td>
+          <td>21 tahun</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td></td>
+          <td>jumlah</td>
+          <td>.... tahun</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <h2>col span</h2>
+    <table style="border: 1px solid black">
+      <colgroup>
+        <col span="2" style="background-color: yellow" />
+        <col style="background-color: red" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th colspan="2">no dan nama</th>
+          <th>usia</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>anton</td>
+          <td>21 tahun</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td>budi</td>
+          <td>21 tahun</td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td>jono</td>
+          <td>21 tahun</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td></td>
+          <td>jumlah</td>
+          <td>.... tahun</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <h2>row span</h2>
+    <table style="border: 1px solid black">
+      <colgroup>
+        <col span="2" style="background-color: yellow" />
+        <col style="background-color: red" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th colspan="3">data</th>
+        </tr>
+        <tr>
+          <th rowspan="2">no</th>
+          <th>nama</th>
+          <th rowspan="2">usia</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>anton</td>
+          <td rowspan="3">21 tahun</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td>budi</td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td>jono</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td rowspan="2">total</td>
+          <td>jumlah</td>
+          <td>63 tahun</td>
+        </tr>
+        <tr>
+          <td>jumlah orang</td>
+          <td>3</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
