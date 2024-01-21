@@ -218,3 +218,53 @@
 ![semantic HTML](semantic.png)
 
 - elemen HTML yang memiliki arti
+
+### layout
+
+- layout pada HTML menggunakan CSS yang dideklarasikan pada header melalui tag `<style></style>`
+
+### responsive
+
+- kemampuan halaman untuk beradaptasi terhadap perubahan ukuran layar/device yang digunakan
+- contoh menggunakan persentase % untuk membuat konten responsive pada sebuah gambar:
+
+```
+<img
+    style="width: 100%; height: auto"
+    src="semantic.png"
+    alt="semantic html"
+/>
+```
+
+- persentase % hanya bisa dilakukan pada elemen HTML seperti `<img>` diatas dan elemen yang lain
+- bagaimana cara kita ingin memperbesar teks secara otomatis?
+- kita dapat menggunakan unit `vw (viewport width)` untuk ukuran font
+- contoh: `<h2 style="font-size: 5vw">hai</h2>`
+
+### viewport
+
+- `<meta name="viewport" content="width=device-width, initial-scale=1.0" />`
+- artinya width/lebar nya adalah lebar dari sebuah device dengan initial scale 1.0
+- hal itu berlaku pada mobile (smartphone/tablet), ukuran web akan menyesuaikan ukuran device tersebut
+- muncul masalah ketika kita inisiasi web kita menggunakan pixel, hal itu tidak relevan bagi smartphone yang spesifikasinya tinggi karena kepadatan pixel yang berbeda, web kita bisa akan menjadi kecil, begitupun sebaliknya
+- maka kita gunakan `initial-scale=0` untuk mengatur tingkat zoom awal halaman web ketika dimuat pada perangkat dengan layar mobile
+- `initial-scale=0` bisa menyesuaikan ukuran pixel pada mobile dengan ukuran pixel aslinya (web yang kita buat)
+
+### media query
+
+- contoh pada gambar, media query efektif digunakan
+- ketika menggunakan % untuk nilai width mungkin gambar akan pecah ketika ia mencapai ukuran dengan zoom yang besar
+- kita dapat menghandle dengan menyiapkan beberapa gambar dengan ukuran yang berbeda untuk ditampilkan pada layar sesuai dengan ukuran layarnya
+
+### id
+
+- atribut id terdapat pada semua tag HTML
+- digunakan sebagai penanada/selector utuk tag yang telah diberi id
+- id harus uniq artinya tidak boleh ada yang sama
+- id sangat berguna ketika kita menggunakan CSS apalagi javacript
+- jika terdapat 5 tag yang sama pada html, katakanlah itu tag `<div>`, tetapi kita hanya ingin memberikan styling pada 1 div saja, maka id bisa jadi solusi dengan menambahkanya pada div yang ingin kita styling
+- begitupun dengan javasc ript, kita dapat mengambil elemen beradasarkan id dengan mudah
+
+### tag-lainya
+
+- [developer.mozilla.org/en-US/docs/Web/HTML](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
