@@ -212,3 +212,9 @@
 
 - collspan menggabungkan kolom menjadi satu kolom
 - rowspan menggabungkan baris menjadi satu baris
+
+### semantic
+
+![semantic HTML](semantic.png)
+
+- elemen HTML yang memiliki arti
